@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>SVG stack preview | svg-sprite</title>
+        <style>
+            body {
+                padding: 0;
+                margin: 0;
+                color: #666;
+                background: #fafafa;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 1em;
+                line-height: 1.4;
+            }
+
+            header {
+                display: block;
+                padding: 3em 3em 2em;
+                background-color: #fff;
+            }
+
+            header p {
+                margin: 2em 0 0;
+            }
+
+            section {
+                border-top: 1px solid #eee;
+                padding: 2em 3em 0;
+            }
+
+            section ul {
+                margin: 0;
+                padding: 0;
+            }
+
+            section li {
+                display: inline-block;
+                background-color: #fff;
+                position: relative;
+                margin: 0 2em 2em 0;
+                vertical-align: top;
+                border: 1px solid #ccc;
+                padding: 1em 1em 3em;
+                cursor: default;
+            }
+
+            .icon-box {
+                margin: 0;
+                width: 144px;
+                height: 144px;
+                position: relative;
+                background: #ccc url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12'%3E%3Cpath fill='%23fff' d='M6 0h6v6H6zM0 6h6v6H0z'/%3E%3C/svg%3E") top left repeat;
+                border: 1px solid #ccc;
+                display: table-cell;
+                vertical-align: middle;
+                text-align: center;
+            }
+
+            .icon {
+                display: inline-block;
+            }
+
+            h1 {
+                margin-top: 0;
+            }
+
+            h2 {
+                margin: 0;
+                padding: 0;
+                font-size: 1em;
+                font-weight: 400;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                position: absolute;
+                left: 1em;
+                right: 1em;
+                bottom: 1em;
+            }
+
+            footer {
+                display: block;
+                margin: 0;
+                padding: 0 3em 3em;
+            }
+
+            footer p {
+                margin: 0;
+                font-size: .7em;
+            }
+
+            footer a {
+                color: #0f7595;
+                margin-left: 0;
+            }
+        </style>
+
+<!--
+Sprite shape dimensions
+====================================================================================================
+You will need to set the sprite shape dimensions via CSS when you use them as stack SVGs, otherwise
+they would become a huge 100% in size. You may use the following dimension classes for doing so.
+They might well be outsourced to an external stylesheet of course.
+-->
+
+<style>
+ .svg-arrowFooter-dims { width: 6px; height: 12px; }
+ .svg-ballFooter-dims { width: 22px; height: 22px; }
+ .svg-buttonArrow-dims { width: 15px; height: 16px; }
+ .svg-catFooter-dims { width: 22px; height: 22px; }
+ .svg-chek-dims { width: 28px; height: 28px; }
+ .svg-facebookFooter-dims { width: 22px; height: 22px; }
+ .svg-fullscreen-dims { width: 14px; height: 14px; }
+ .svg-marks-dims { width: 62px; height: 48px; }
+ .svg-pause-dims { width: 800px; height: 800px; }
+ .svg-play-dims { width: 800px; height: 800px; }
+ .svg-playButtonIcon-dims { width: 151px; height: 152px; }
+ .svg-scrollArrow-dims { width: 17px; height: 16px; }
+ .svg-stop-dims { width: 800px; height: 800px; }
+ .svg-twitterFooter-dims { width: 24px; height: 18px; }
+</style>
+
+<!--
+====================================================================================================
+-->
+
+    </head>
+    <body>
+        <header>
+            <h1>SVG stack preview</h1>
+            <p>This preview features an SVG stack. Please have a look at the HTML source for further details and be aware of the following constraints:</p>
+            <ul>
+                <li>Your browser has to <a href="https://caniuse.com/svg-fragment" target="_blank" rel="noopener noreferrer">support SVG fragment identifiers</a> for SVG stacks to work.</li>
+                <li>Support for SVG fragment identifiers hasn't always been that decent. For older browsers you will have to use some prolyfill like <a href="https://github.com/preciousforever/SVG-Stacker/blob/master/fixsvgstack.jquery.js" target="_blank" rel="noopener noreferrer">fixsvgstack.jquery.js</a>.</li>
+            </ul>
+        </header>
+        <section>
+
+<!--
+SVG stack
+====================================================================================================
+These SVG images make use of fragment identifiers (IDs) to reference certain portions of the
+external sprite. By default, all shapes inside the sprite are hidden by CSS. The `:target` pseudo
+selector is used to show the very shape that is referenced by the fragment identifier.
+-->
+
+            <ul>
+
+             <li title="arrowFooter">
+                    <div class="icon-box">
+                        <img src="../icons/icons.svg#arrowFooter" class="svg-arrowFooter-dims" alt="arrowFooter">
+                    </div>
+                    <h2>arrowFooter, </h2>
+                </li>
+             <li title="ballFooter">
+                    <div class="icon-box">
+                        <img src="../icons/icons.svg#ballFooter" class="svg-ballFooter-dims" alt="ballFooter">
+                    </div>
+                    <h2>ballFooter, </h2>
+                </li>
+             <li title="buttonArrow">
+                    <div class="icon-box">
+                        <img src="../icons/icons.svg#buttonArrow" class="svg-buttonArrow-dims" alt="buttonArrow">
+                    </div>
+                    <h2>buttonArrow, </h2>
+                </li>
+             <li title="catFooter">
+                    <div class="icon-box">
+                        <img src="../icons/icons.svg#catFooter" class="svg-catFooter-dims" alt="catFooter">
+                    </div>
+                    <h2>catFooter, </h2>
+                </li>
+             <li title="chek">
+                    <div class="icon-box">
+                        <img src="../icons/icons.svg#chek" class="svg-chek-dims" alt="chek">
+                    </div>
+                    <h2>chek, </h2>
+                </li>
+             <li title="facebookFooter">
+                    <div class="icon-box">
+                        <img src="../icons/icons.svg#facebookFooter" class="svg-facebookFooter-dims" alt="facebookFooter">
+                    </div>
+                    <h2>facebookFooter, </h2>
+                </li>
+             <li title="fullscreen">
+                    <div class="icon-box">
+                        <img src="../icons/icons.svg#fullscreen" class="svg-fullscreen-dims" alt="fullscreen">
+                    </div>
+                    <h2>fullscreen, </h2>
+                </li>
+             <li title="marks">
+                    <div class="icon-box">
+                        <img src="../icons/icons.svg#marks" class="svg-marks-dims" alt="marks">
+                    </div>
+                    <h2>marks, </h2>
+                </li>
+             <li title="pause">
+                    <div class="icon-box">
+                        <img src="../icons/icons.svg#pause" class="svg-pause-dims" alt="pause">
+                    </div>
+                    <h2>pause, </h2>
+                </li>
+             <li title="play">
+                    <div class="icon-box">
+                        <img src="../icons/icons.svg#play" class="svg-play-dims" alt="play">
+                    </div>
+                    <h2>play, </h2>
+                </li>
+             <li title="playButtonIcon">
+                    <div class="icon-box">
+                        <img src="../icons/icons.svg#playButtonIcon" class="svg-playButtonIcon-dims" alt="playButtonIcon">
+                    </div>
+                    <h2>playButtonIcon, </h2>
+                </li>
+             <li title="scrollArrow">
+                    <div class="icon-box">
+                        <img src="../icons/icons.svg#scrollArrow" class="svg-scrollArrow-dims" alt="scrollArrow">
+                    </div>
+                    <h2>scrollArrow, </h2>
+                </li>
+             <li title="stop">
+                    <div class="icon-box">
+                        <img src="../icons/icons.svg#stop" class="svg-stop-dims" alt="stop">
+                    </div>
+                    <h2>stop, </h2>
+                </li>
+             <li title="twitterFooter">
+                    <div class="icon-box">
+                        <img src="../icons/icons.svg#twitterFooter" class="svg-twitterFooter-dims" alt="twitterFooter">
+                    </div>
+                    <h2>twitterFooter, </h2>
+                </li>
+         </ul>
+
+<!--
+====================================================================================================
+-->
+
+        </section>
+        <footer>
+            <p>Generated at Mon, 22 May 2023 14:22:35 GMT by <a href="https://github.com/svg-sprite/svg-sprite" target="_blank" rel="noopener noreferrer">svg-sprite</a>.</p>
+        </footer>
+    </body>
+</html>

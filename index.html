@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Dalio</title>
+	<link rel="stylesheet" href="css/style.min.css?_v=20230522172053">
+	<link href="https://fonts.googleapis.com/css?family=Inter:regular,500,600,700&display=swap&_v=20230522172053" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css?_v=20230522172053">
+</head>
+<body>
+	<div class="wrapper">
+		<header class="header">
+	<div class="header__container">
+		<a href="" class="header__logo"><picture><source srcset="img/header/header__logo.webp" type="image/webp"><img src="img/header/header__logo.png" alt="header__logo"></picture></a>
+		<div class="header__menu menu-header">
+			<ul class="menu-header__list">
+				<li class="menu-header__item"><a href="#about" class="menu-header__link">About us</a></li>
+				<li class="menu-header__item"><a href="#help" class="menu-header__link">What We do</a></li>
+				<li class="menu-header__item"><a href="#projects" class="menu-header__link">Our work</a></li>
+				<li class="menu-header__item"><a href="#blog" class="menu-header__link">Blog</a></li>	
+				<li class="menu-header__item"><a href="#footer" class="menu-header__link">Say hi</a></li>	
+			</ul>
+		</div>
+		<div class="header__burger">
+			<span></span>
+		</div>
+	</div>
+</header>
+		<main class="page">
+			<div class="page__main main section">
+	<div class="main__container-big">
+		<div class="main__background background-main">
+			<!-- <div class="background-main__lines"><picture><source srcset="img/main/decor/main__lines.webp" type="image/webp"><img src="img/main/decor/main__lines.png" alt="/main__lines.png"></picture></div> -->
+			<!-- <div class="background-main__elem"></div>
+			<div class="background-main__elem_02"></div>
+			<div class="background-main__elem_03"></div>
+			<div class="background-main__elem_04"></div> -->
+			<!-- <div class="background-main__star"><picture><source srcset="img/main/decor/main__star.webp" type="image/webp"><img src="img/main/decor/main__star.png" alt="main__star"></picture></div>
+			<div class="background-main__star_02"><picture><source srcset="img/main/decor/main__star.webp" type="image/webp"><img src="img/main/decor/main__star.png" alt="main__star"></picture></div> -->
+			<div class="background-main__circle"><picture><source srcset="img/main/decor/main__grey-circle.webp" type="image/webp"><img src="img/main/decor/main__grey-circle.png" alt="main__grey-circle"></picture></div>
+		</div>
+		<div class="main__image">
+			<picture><source srcset="img/main/main_image.webp" type="image/webp"><img src="img/main/main_image.jpg" alt="main_image"></picture>
+			<div class="main__decor"></div>
+		</div>
+		<div class="main__info">
+			<div class="main__title">
+				<div class="main__top">
+					<div class="main__up">
+						<div class="main__label-image"><picture><source srcset="img/main/decor/main__world-class.webp" type="image/webp"><img src="img/main/decor/main__world-class.png" alt="world-class"></picture></div>
+						<div class="main__label">Digital</div>
+					</div>
+					<div class="main__down">
+						<div class="main__label">Agency</div>
+					</div>
+				</div>
+			</div>
+			<div class="main__subtitle"><p>Full-service design support that growing B2B companies need. World leading agency.</p></div>
+			<a href="" class="main__button button__yell">
+				Our Projects
+				<div class="main__icon-arrow">
+					<svg>
+						<use xlink:href='img/icons/icons.svg#buttonArrow'></use>
+					</svg>
+				</div>
+			</a>
+			<div class="main__scroll">
+				<div class="main__text">Scroll Down</div>
+				<div class="main__icon-ornament">
+					<svg>
+						<use xlink:href='img/icons/icons.svg#scrollArrow'></use>
+					</svg>
+				</div>
+			</div>
+		</div>	
+		<div class="main__video video-main">
+			<div class="video-main__body">
+				<div class="video-main__player">
+					<video class="video-main__video" preload="metadata" poster="img/main/player/poster-video__image.jpg" >
+						<source type="video/webm" src="files/main__video.webm">
+						<source type="video/mp4" src="files/main__video.mp4">
+						
+					</video>
+					<div class="video-main__controls">
+						<div class="video-main__play">
+							<svg>
+							<use xlink:href='img/icons/icons.svg#play'></use>
+							</svg>
+						</div>
+						<div class="video-main__stop">
+							<svg>
+							<use xlink:href='img/icons/icons.svg#stop'></use>
+							</svg>
+						</div>
+						<div class="video-main__track">
+							<input value="0" min="0" max="100" class="video-main__input" type="range">
+				
+						</div>
+						<div class="video-main__fullscreen">
+							<svg>
+							<use xlink:href='img/icons/icons.svg#fullscreen'></use>
+							</svg>
+						</div>
+						<div class="video-main__time">00:00</div>
+					</div>
+				</div>
+				<button class="video-main__button button-main">
+					<svg>
+						<use xlink:href="img/icons/icons.svg#playButtonIcon"></use>
+					</svg>
+				</button>
+			</div>
+		</div>
+		
+	</div>
+</div>
+			<section id="about" class="page__about about section">
+	<div class="about__container">
+		<div class="about__body">
+			<div class="about__info">
+				<h2 class="about__title title">We are a creative
+				digital agency</h2>
+				<div class="about__subtitle">
+					<p>
+						Dalio started with a vision for building an agency to solve the business problems of the future, and that requires a
+						different model.
+						We’re not a branding agency that dabbles in tech, and we’re not a development shop that leaves you hanging when it’s
+						time
+						to go to market.
+					</p>
+					<p>
+						We start with human experience and layer in technology and
+					marketing to deliver truly integrated digital solutions.
+					This unique set of capabilities sets us apart from other agencies
+					and positions DIG to help you attack your goals.
+					</p>
+				</div>
+				<a href="" class="about__button button__yell">
+					Contact us
+					<div class="about__arrow">
+						<svg>
+							<use xlink:href='img/icons/icons.svg#buttonArrow'></use>
+						</svg>
+					</div>
+				</a>
+				
+			</div>
+			<div class="about__decor decor-about">
+				<div class="decor-about__top">
+					<div class="decor-about__image image_1">
+						<picture><source srcset="img/about/about__image_01.webp" type="image/webp"><img src="img/about/about__image_01.jpg" alt="about-image"></picture>
+					</div>
+					<div class="decor-about__image image_2">
+						<picture><source srcset="img/about/about__image_04.webp" type="image/webp"><img src="img/about/about__image_04.jpg" alt="about-image"></picture>
+					</div>
+				</div>
+				<div class="decor-about__bottom">
+					<div class="decor-about__image image_3">
+						<picture><source srcset="img/about/about__image_02.webp" type="image/webp"><img src="img/about/about__image_02.jpg" alt="about-image"></picture>
+					</div>
+					<div class="decor-about__image image_4">
+						<picture><source srcset="img/about/about__image_03.webp" type="image/webp"><img src="img/about/about__image_03.jpg" alt="about-image"></picture>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="about__footer footer-about">
+			<div class="footer-about__column">
+				<div class="footer-about__value">4.8k</div>
+				<div class="footer-about__name">Job Completed</div>
+			</div>
+			<div class="footer-about__column">
+				<div class="footer-about__value">12+</div>
+				<div class="footer-about__name">Industry Experience</div>
+			</div>
+			<div class="footer-about__column">
+				<div class="footer-about__value">2.5k+</div>
+				<div class="footer-about__name">World wide clients</div>
+			</div>
+			<div class="footer-about__column">
+				<div class="footer-about__value">120+</div>
+				<div class="footer-about__name">Won Awards</div>
+			</div>
+		</div>
+	
+	</div>
+</section>
+			<section class="page__solution solution section">
+	<div class="solution__container">
+		<div class="solution__image">
+			<div class="solution__image-box">
+				<picture><source srcset="img/solution/solution__image_01.webp" type="image/webp"><img src="img/solution/solution__image_01.jpg" alt="solution-image"></picture>
+				<div class="solution__decor"></div>
+			</div>
+		</div>
+		<div class="solution__info info-solution">
+			<h2 class="info-solution__title title">Our Solution Approach</h2>
+			<div class="info-solution__items">
+				<div class="info-solution__item">
+					<div class="info-solution__icon">
+						<svg>
+							<use xlink:href='img/icons/icons.svg#chek'></use>
+						</svg>
+					</div>
+					<div class="info-solution__name">Data Analysis with problem factor</div>
+					<div class="info-solution__text"><p>Delivering the spatial expertise of the largest, most sophisticated performance marketing agencies, while providing
+					intimate, boutique-like support.</p></div>
+				</div>
+				<div class="info-solution__item">
+					<div class="info-solution__icon">
+						<svg>
+							<use xlink:href='img/icons/icons.svg#chek'></use>
+						</svg>
+					</div>
+					<div class="info-solution__name">Functionality solution for users</div>
+					<div class="info-solution__text">
+						<p>Delivering the spatial expertise of the largest, most sophisticated performance marketing agencies.</p>
+					</div>
+				</div>
+				<div class="info-solution__item">
+					<div class="info-solution__icon">
+						<svg>
+							<use xlink:href='img/icons/icons.svg#chek'></use>
+						</svg>
+					</div>
+					<div class="info-solution__name">Latest technology enabled</div>
+					<div class="info-solution__text">
+						<p>Technology the spatial expertise of the largest, most sophisticated performance marketing agencies, while providing
+						intimate, boutique-like support.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+			<section id="help" class="page__help help section">
+	<div class="help__container">
+		<div class="help__header header-help">
+			<h2 class="header-help__title title">Service we can
+			help you</h2>
+			<a href="" class="header-help__button button__white">
+				See All
+				<svg>
+					<use xlink:href='img/icons/icons.svg#buttonArrow'></use>
+				</svg>
+			</a>
+		</div>
+		<div class="help__swiper swiper-help swiper swiper-init">
+			<div class="swiper-help__wrapper swiper-wrapper">
+				<div class="swiper-help__slide swiper-help__slide_01 swiper-slide">
+					<div class="swiper-help__icon"><img src="img/help/help__icon_01.svg" alt="help__icon"></div>
+					<h4 class="swiper-help__title">Content Writing</h4>
+					<div class="swiper-help__subtitle">
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. A consequat nunc id purus pretium sagittis. Nulla ridiculus
+							nullam bibendum luctus viverra. Eu pellentesque sem sed platea diam dignissim duis purus.
+						</p>
+				</div>
+					<a href="" class="swiper-help__button button__white">
+						Read More
+						<svg>
+							<use xlink:href='img/icons/icons.svg#buttonArrow'></use>
+						</svg>
+					</a>
+				</div>
+				<div class="swiper-help__slide swiper-help__slide_02 swiper-slide">
+					<div class="swiper-help__icon"><img src="img/help/help__icon_02.svg" alt="help__icon"></div>
+					<h4 class="swiper-help__title">UX Research</h4>
+					<div class="swiper-help__subtitle"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. A consequat nunc id purus pretium sagittis. Nulla ridiculus
+					nullam bibendum luctus viverra. Eu pellentesque sem sed platea diam dignissim duis purus.</p></div>
+					<a href="" class="swiper-help__button button__white">
+						Read More
+						<svg>
+							<use xlink:href='img/icons/icons.svg#buttonArrow'></use>
+						</svg>
+					</a>
+				</div>
+				<div class="swiper-help__slide swiper-help__slide_03 swiper-slide">
+					<div class="swiper-help__icon"><img src="img/help/help__icon_03.svg" alt="help__icon"></div>
+					<h4 class="swiper-help__title">Branding</h4>
+					<div class="swiper-help__subtitle"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. A consequat nunc id purus pretium sagittis. Nulla ridiculus
+					nullam bibendum luctus viverra. Eu pellentesque sem sed platea diam dignissim duis purus.</p></div>
+					<a href="" class="swiper-help__button button__white">
+						Read More
+						<svg>
+							<use xlink:href='img/icons/icons.svg#buttonArrow'></use>
+						</svg>
+					</a>
+				</div>
+				<div class="swiper-help__slide swiper-help__slide_04 swiper-slide">
+					<div class="swiper-help__icon"><img src="img/help/help__icon_01.svg" alt="help__icon"></div>
+					<h4 class="swiper-help__title">Web Design</h4>
+					<div class="swiper-help__subtitle"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. A consequat nunc id purus pretium sagittis. Nulla ridiculus
+					nullam bibendum luctus viverra. Eu pellentesque sem sed platea diam dignissim duis purus.</p></div>
+					<a href="" class="swiper-help__button button__white">
+						Read More
+						<svg>
+							<use xlink:href='img/icons/icons.svg#buttonArrow'></use>
+						</svg>
+					</a>
+				</div>
+			</div>
+			<div class="swiper-help__pagination swiper-pagination"></div>
+		</div>
+	</div>
+</section>
+			<section id="projects" class="page__projects projects section">
+	<div class="projects__container">
+		<div class="projects__header header-projects">
+			<h2 class="header-projects__title title">Our latest Projects</h2>
+			<nav class="header-projects__menu">
+				<ul class="header-projects__list">
+					<li class="header-projects__item"><a href="#all" class="header-projects__link _active">All</a></li>
+					<li class="header-projects__item"><a href="#uiux" class="header-projects__link">UI/UX</a></li>
+					<li class="header-projects__item"><a href="#design" class="header-projects__link">Web Design</a></li>
+					<li class="header-projects__item"><a href="#branding" class="header-projects__link">Branding</a></li>
+					<li class="header-projects__item"><a href="#interaction" class="header-projects__link">Interaction</a></li>
+				</ul>
+			</nav>
+		</div>
+		<div class="projects__swiper swiper-projects swiper">
+			<div class="masonry-wrapper swiper-projects__wrapper swiper-wrapper">
+				<div data-index="1" data-filter="uiux" class="swiper-projects__slide swiper-slide masonry-item _active">
+					<a href="" class="swiper-projects__image"><picture><source srcset="img/projects/projects__image_01.webp" type="image/webp"><img src="img/projects/projects__image_01.jpg" alt="projects__image"></picture></a>
+					<a href="" class="swiper-projects__title">Talent.com - Logo, Full Redesign and Branding</a>
+					<div class="swiper-projects__subtitle">
+						<p>
+							Talent.com a new brand identity using their core values of optimism, transparency and approachability as inspiration. As
+							a result, we were
+							able to create the most streamlined
+						</p>
+					</div>
+				</div>
+				<div data-index="2" data-filter="uiux" class="swiper-projects__slide swiper-slide masonry-item _active">
+					<a href="" class="swiper-projects__image"><picture><source srcset="img/projects/projects__image_02.webp" type="image/webp"><img src="img/projects/projects__image_02.jpg" alt="projects__image"></picture></a>
+					<a href="" class="swiper-projects__title">Bonfire - Landing Page Design Webby Awards Nomination</a>
+					<div class="swiper-projects__subtitle">
+						<p>
+							Pretty excited to announce that we just got nominated at the Webby Awards! easy to understand and to use should be
+							essential for every business owner who uses their website.
+						</p>
+					</div>
+				</div>
+				<div data-index="3" data-filter="design" class="swiper-projects__slide swiper-slide masonry-item _active">
+					<a href="" class="swiper-projects__image"><picture><source srcset="img/projects/projects__image_03.webp" type="image/webp"><img src="img/projects/projects__image_03.jpg" alt="projects__image"></picture></a>
+					<a href="" class="swiper-projects__title">Bonfire - Landing Page Design Webby Awards Nomination</a>
+					<div class="swiper-projects__subtitle">
+						<p>
+							Pretty excited to announce that we just got nominated at the Webby Awards! easy to understand and to use
+							should be
+							essential for every business owner who uses their website.
+						</p>
+					</div>
+				</div>
+				<div data-index="4" data-filter="branding" class="swiper-projects__slide swiper-slide masonry-item _active">
+					<a href="" class="swiper-projects__image"><picture><source srcset="img/projects/projects__image_04.webp" type="image/webp"><img src="img/projects/projects__image_04.jpg" alt="projects__image"></picture></a>
+					<a href="" class="swiper-projects__title">Bonfire - Landing Page Design Webby Awards Nomination</a>
+					<div class="swiper-projects__subtitle">
+						<p>
+							Pretty excited to announce that we just got nominated at the Webby Awards! easy to understand and to use
+							should be
+							essential for every business owner who uses their website.
+						</p>
+					</div>
+				</div>
+				<div data-index="5" data-filter="interaction" class="swiper-projects__slide swiper-slide masonry-item _active">
+					<a href="" class="swiper-projects__image"><picture><source srcset="img/projects/projects__image_05.webp" type="image/webp"><img src="img/projects/projects__image_05.jpg" alt="projects__image"></picture></a>
+					<a href="" class="swiper-projects__title">Bonfire - Landing Page Design Webby Awards Nomination</a>
+					<div class="swiper-projects__subtitle">
+						<p>
+							Pretty excited to announce that we just got nominated at the Webby Awards! easy to understand and to use
+							should be
+							essential for every business owner who uses their website.
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="swiper-projects__pagination swiper-pagination"></div>
+		</div>
+		<a href="" class="projects__button button__yell">
+			<p>Load More</p>
+			<svg>
+				<use xlink:href='img/icons/icons.svg#buttonArrow'></use>
+			</svg>
+		</a>
+	</div>
+</section>
+			<section class="page__clients clients section">
+	<div class="clients__container">
+		<h2 class="clients__title title">What say happy clients</h2>
+		<div class="clients__swiper swiper-clients swiper">
+			<div class="swiper-clients__wrapper swiper-wrapper">
+				<div class="swiper-clients__slide swiper-slide">
+					<div class="swiper-clients__marks">
+						<svg>
+							<use xlink:href='img/icons/icons.svg#marks'></use>
+						</svg>
+					</div>
+					<div class="swiper-clients__text">
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit semper consequat in dolor mattis pellentesque suspendisse
+							vulputate nec. Scelerisque elementum, consequat pharetra lectus eget vivamus ut. Magna aliquam tellus at volutpat cras
+							aliquet facilisi quis adipiscing. Proin egestas et pellentesque augue pretium, amet. Natoque blandit augue integer
+							maecenas mattis amet, nec.
+						</p>
+					</div>
+					<div class="swiper-clients__footer slide-footer">
+						<div class="slide-footer__info">
+							<div class="slide-footer__avatar"><picture><source srcset="img/clients/clients__avatar_01.webp" type="image/webp"><img src="img/clients/clients__avatar_01.png" alt="clients__avatar"></picture></div>
+							<div class="slide-footer__name">Brooklyn Simmons</div>
+							<div class="slide-footer__position">Pendron.Inc, CEO</div>
+						</div>
+						<div class="slide-footer__rating">
+							<div class="slide-footer__stars">
+								<span></span>
+							</div>
+							<div class="slide-footer__value">5</div>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-clients__slide swiper-slide">
+						<div class="swiper-clients__marks">
+							<svg>
+								<use xlink:href='img/icons/icons.svg#marks'></use>
+							</svg>
+						</div>
+						<div class="swiper-clients__text">
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit semper consequat in dolor mattis pellentesque
+								suspendisse
+								vulputate nec. Scelerisque elementum, consequat pharetra lectus eget vivamus ut. Magna aliquam tellus at
+								volutpat cras
+								aliquet facilisi quis adipiscing. Proin egestas et pellentesque augue pretium, amet. Natoque blandit augue
+								integer
+								maecenas mattis amet, nec.
+							</p>
+						</div>
+						<div class="swiper-clients__footer slide-footer">
+							<div class="slide-footer__info">
+								<div class="slide-footer__avatar"><picture><source srcset="img/clients/clients__avatar_02.webp" type="image/webp"><img src="img/clients/clients__avatar_02.png" alt="clients__avatar"></picture>
+								</div>
+								<div class="slide-footer__name">Jenny Wilson</div>
+								<div class="slide-footer__position">Bettero.Inc, CEO</div>
+							</div>
+							<div class="slide-footer__rating">
+								<div class="slide-footer__stars">
+									<span></span>
+								</div>
+								<div class="slide-footer__value">3.5</div>
+							</div>
+						</div>
+				</div>
+				<div class="swiper-clients__slide swiper-slide">
+					<div class="swiper-clients__marks">
+						<svg>
+							<use xlink:href='img/icons/icons.svg#marks'></use>
+						</svg>
+					</div>
+					<div class="swiper-clients__text">
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit semper consequat in dolor mattis pellentesque
+							suspendisse
+							vulputate nec. Scelerisque elementum, consequat pharetra lectus eget vivamus ut. Magna aliquam tellus at
+							volutpat cras
+							aliquet facilisi quis adipiscing. Proin egestas et pellentesque augue pretium, amet. Natoque blandit augue
+							integer
+							maecenas mattis amet, nec.
+						</p>
+					</div>
+					<div class="swiper-clients__footer slide-footer">
+						<div class="slide-footer__info">
+							<div class="slide-footer__avatar"><picture><source srcset="img/clients/clients__avatar_01.webp" type="image/webp"><img src="img/clients/clients__avatar_01.png" alt="clients__avatar"></picture>
+							</div>
+							<div class="slide-footer__name">Brooklyn Simmons</div>
+							<div class="slide-footer__position">Pendron.Inc, CEO</div>
+						</div>
+						<div class="slide-footer__rating">
+							<div class="slide-footer__stars">
+								<span></span>
+							</div>
+							<div class="slide-footer__value">5</div>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-clients__slide swiper-slide">
+					<div class="swiper-clients__marks">
+						<svg>
+							<use xlink:href='img/icons/icons.svg#marks'></use>
+						</svg>
+					</div>
+					<div class="swiper-clients__text">
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit semper consequat in dolor mattis pellentesque
+							suspendisse
+							vulputate nec. Scelerisque elementum, consequat pharetra lectus eget vivamus ut. Magna aliquam tellus at
+							volutpat cras
+							aliquet facilisi quis adipiscing. Proin egestas et pellentesque augue pretium, amet. Natoque blandit augue
+							integer
+							maecenas mattis amet, nec.
+						</p>
+					</div>
+					<div class="swiper-clients__footer slide-footer">
+						<div class="slide-footer__info">
+							<div class="slide-footer__avatar"><picture><source srcset="img/clients/clients__avatar_02.webp" type="image/webp"><img src="img/clients/clients__avatar_02.png" alt="clients__avatar"></picture>
+							</div>
+							<div class="slide-footer__name">Jenny Wilson</div>
+							<div class="slide-footer__position">Bettero.Inc, CEO</div>
+						</div>
+						<div class="slide-footer__rating">
+							<div class="slide-footer__stars">
+								<span></span>
+							</div>
+							<div class="slide-footer__value">3.5</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="swiper-clients__pagination swiper-pagination"></div>
+			
+			<div class="swiper-clients__prev swiper-button-prev"></div>
+			<div class="swiper-clients__next swiper-button-next"></div>
+		</div>
+	</div>
+</section>
+			<section id="blog" class="page__blog blog section">
+	<div class="blog__container">
+		<div class="blog__header">
+			<h2 class="blog__title title">Blog from insights</h2>
+			<a href="" class="blog__button">See All</a>
+		</div>
+		<div class="blog__swiper swiper-blog swiper swiper-init">
+			<div class="swiper-blog__wrapper swiper-wrapper">
+				<div class="swiper-blog__slide swiper-slide">
+					<a href="" class="swiper-blog__image"><picture><source srcset="img/blog/blog__image_01.webp" type="image/webp"><img src="img/blog/blog__image_01.jpg" alt="blog__image"></picture></a>
+					<div class="swiper-blog__info">
+						<div class="swiper-blog__tag">TECHNOLOGY</div>
+						<div class="swiper-blog__data-name">John Doe <span></span> 19 Jan 2022</div>
+						<a href="" class="swiper-blog__title">A small business is only as good as its tools and it is totally true.</a>
+						<a href="" class="swiper-blog__button button__white">
+							<p>Read More</p>
+							<svg>
+								<use xlink:href='img/icons/icons.svg#buttonArrow'></use>
+							</svg>
+						</a>
+					</div>
+				</div>
+				<div class="swiper-blog__slide swiper-slide">
+					<a href="" class="swiper-blog__image"><picture><source srcset="img/blog/blog__image_02.webp" type="image/webp"><img src="img/blog/blog__image_02.jpg" alt="blog__image"></picture></a>
+					<div class="swiper-blog__info">
+						<div class="swiper-blog__tag">WEBINER</div>
+						<div class="swiper-blog__data-name">John Doe <span></span> 19 Jan 2022</div>
+						<a href="" class="swiper-blog__title">Colaboration with team members that will be grow to business.</a>
+						<a href="" class="swiper-blog__button button__white">
+							<p>Read More</p>
+							<svg>
+								<use xlink:href='img/icons/icons.svg#buttonArrow'></use>
+							</svg>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="swiper-blog__pagination swiper-pagination"></div>
+		</div>
+	</div>
+</section>
+		</main>
+		<footer id="footer" class="footer section">
+	<div class="footer__container-big">
+		<div class="footer__form form-footer">
+			<h3 class="form-footer__title">Sign Up to Receive Product Updates and More</h3>
+			<form class="form-footer__form">
+				<input class="form-footer__input" type="text"><button type="submit" class="form-footer__button">
+					<svg>
+						<use xlink:href='img/icons/icons.svg#arrowFooter'></use>
+					</svg>
+				</button>
+			</form>
+		</div>
+		<div class="footer__contacts contacts-footer">
+			<div class="contacts-footer__item">
+				<div class="contacts-footer__title">Office</div>
+				<div class="contacts-footer__subtitle">545, Street 11, Block F
+				California, U.S.A</div>
+			</div>
+			<div class="contacts-footer__item">
+				<div class="contacts-footer__title">Contact</div>
+				<a href="tel:+923023003215;" class="contacts-footer__subtitle contacts-footer__link">+92 302 300 3215</a>
+				<a href="mailto:ouraddress@email.com;" class="contacts-footer__subtitle contacts-footer__link">ouraddress@email.com</a>
+			</div>
+		</div>
+		<div class="footer__bottom bottom-footer">
+			<div class="bottom-footer__item">2022 © asanheyaa</div>
+			<div class="bottom-footer__item">Terms & Conditions Privacy</div>
+			<div class="bottom-footer__item bottom-footer__icons">
+				<a href="" class="bottom-footer__icon">
+					<svg>
+						<use xlink:href='img/icons/icons.svg#twitterFooter'></use>
+					</svg>
+				</a>
+				<a href="" class="bottom-footer__icon">
+					<svg>
+						<use xlink:href='img/icons/icons.svg#facebookFooter'></use>
+					</svg>
+				</a>
+				<a href="" class="bottom-footer__icon">
+					<svg>
+						<use xlink:href='img/icons/icons.svg#ballFooter'></use>
+					</svg>
+				</a>
+				<a href="" class="bottom-footer__icon">
+					<svg>
+						<use xlink:href='img/icons/icons.svg#catFooter'></use>
+					</svg>
+				</a>
+			</div>
+
+		</div>
+	</div>
+</footer>
+	</div>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js?_v=20230522172053"></script>
+	<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js?_v=20230522172053"></script>
+	<script src="js/app.min.js?_v=20230522172053"></script>
+
+
+</body>
+</html>
